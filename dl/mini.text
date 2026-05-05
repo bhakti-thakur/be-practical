@@ -6,14 +6,15 @@ Gender and Face recognition
 from deepface import DeepFace
 import cv2
 import matplotlib.pyplot as plt
-from google.colab import files
+#from google.colab import files
 
 
-uploaded = files.upload()
+#uploaded = files.upload()
 
 # Get uploaded file name
-img_path = list(uploaded.keys())[0]
+#img_path = list(uploaded.keys())[0]
 
+img_path = "test.jpg"
 
 result = DeepFace.analyze(
     img_path=img_path,
